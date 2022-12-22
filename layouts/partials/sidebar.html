@@ -48,6 +48,8 @@
         <span>{{- partial "icon/twitterIcon.html" . -}}</span>
         {{ else if eq .Name "Codeberg" }}
         <span>{{- partial "icon/codebergIcon.html" . -}}</span>
+        {{ else if eq .Name "Facebook" }}
+        <span>{{- partial "icon/facebookIcon.html" . -}}</span>
         {{ else if eq .Name "GitHub" }}
         <span>{{- partial "icon/githubIcon.html" . -}}</span>
         {{ else if eq .Name "GitLab" }}
@@ -68,6 +70,8 @@
         <span>{{- partial "icon/emailIcon.html" . -}}</span>
         {{ else if eq .Name "RSS" }}
         <span>{{- partial "icon/rssfeedIcon.html" . -}}</span>
+        {{ else }}
+        <span>{{- partial "icon/externalIcon.html" . -}}</span>
         {{ end }}
       </a>
     </li>
